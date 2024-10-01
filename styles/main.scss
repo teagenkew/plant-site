@@ -1,0 +1,67 @@
+@use './partials/variables' as *;
+
+.title-logo{
+    font-family:'Playfair Display';
+    color: white;
+    font-size:32px;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 4px solid $light-green;
+    position:fixed;
+    width:100%;
+    background-color: $darkest-green;
+}
+
+.nav-items{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Poppins';
+    padding: 0 20px;
+}
+
+.nav-item{
+    padding:0 10px;
+    text-decoration: none;
+    font-size:24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-link{
+    color:white;
+}
+
+.padding{
+    height:100px;
+}
+
+
+// Styling the Hero
+.hero{
+    border:2px solid red;
+    height: 40vh;
+    background-image: url(../assets/rubberplanthero.jpg);
+    background-size: cover;
+    position:relative;
+}
+
+
+.hero-title{
+    font-family:'Playfair-Display';
+    font-size:60px;
+    color: $darkest-green;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    position:absolute;
+    right:320px;
+    top:100px;
+    margin:0;
+}
