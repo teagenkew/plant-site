@@ -1,7 +1,13 @@
+body {
+  background-color: #344E41;
+  margin: 0;
+}
+
 .title-logo {
   font-family: "Playfair Display";
   color: white;
   font-size: 32px;
+  padding-left: 1.25rem;
 }
 
 .nav {
@@ -11,8 +17,9 @@
   position: fixed;
   width: 100%;
   background-color: #344E41;
+  margin: 0;
+  z-index: 1;
 }
-
 .nav-items {
   display: flex;
   justify-content: space-around;
@@ -22,7 +29,6 @@
   font-family: "Poppins";
   padding: 0 20px;
 }
-
 .nav-item {
   padding: 0 10px;
   text-decoration: none;
@@ -42,14 +48,16 @@ a {
 }
 
 .hero {
-  border: 2px solid red;
   height: 40vh;
   background-image: url(../assets/rubberplanthero.jpg);
   background-size: cover;
   position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
-
-.hero-title {
+.hero__title {
   font-family: "Playfair-Display";
   font-size: 60px;
   color: #344E41;
@@ -59,4 +67,58 @@ a {
   right: 320px;
   top: 100px;
   margin: 0;
+}
+.hero__subtitle {
+  font-family: "Poppins";
+  position: absolute;
+  font-weight: 400;
+  width: 25rem;
+  text-align: center;
+  right: 280px;
+  top: 150px;
+  color: #3A5A40;
+}
+
+.featured-card {
+  border: 2px solid blue;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: #DAD7CD;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.new-plants {
+  background-color: #DAD7CD;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50rem;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.new-plants__card {
+  height: 12.5rem;
+  width: 12.5rem;
+  border: 2px solid black;
+  margin: 0.625rem;
+}
+
+.plant-care-info {
+  background-color: #DAD7CD;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1.25rem;
+  border-radius: 10px;
+}
+.plant-care-info__article {
+  width: 12.5rem;
+  height: 6.25rem;
+  border: 2px solid black;
+  margin: 1.25rem;
 }/*# sourceMappingURL=main.css.map */
