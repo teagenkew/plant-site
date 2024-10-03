@@ -48,7 +48,7 @@ a {
 }
 
 .hero {
-  height: 40vh;
+  height: 40vw;
   background-image: url(../assets/rubberplanthero.jpg);
   background-size: cover;
   position: relative;
@@ -85,6 +85,8 @@ a {
   height: 150px;
   margin-bottom: 20px;
   background-color: #DAD7CD;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -94,12 +96,20 @@ a {
 
 .new-plants {
   background-color: #DAD7CD;
+  border-radius: 10px;
+  margin: 2rem 1.5rem;
+}
+.new-plants__title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  text-align: center;
+}
+.new-plants__cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 50rem;
   margin: 20px 0;
-  border-radius: 10px;
 }
 .new-plants__card {
   height: 12.5rem;
@@ -107,14 +117,21 @@ a {
   border: 2px solid black;
   margin: 0.625rem;
 }
+.new-plants__image {
+  width: 12.5rem;
+}
 
 .plant-care-info {
   background-color: #DAD7CD;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 1.25rem;
+  margin: 2rem 1.5rem;
   border-radius: 10px;
+}
+.plant-care-info__title {
+  font-size: 24px;
+  text-align: center;
 }
 .plant-care-info__article {
   width: 12.5rem;

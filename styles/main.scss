@@ -55,7 +55,7 @@ a {
 
 // Styling the Hero
 .hero {
-  height: 40vh;
+  height:40vw;
   background-image: url(../assets/rubberplanthero.jpg);
   background-size: cover;
   position: relative;
@@ -94,6 +94,8 @@ a {
   height: 150px;
   margin-bottom:20px;
   background-color: $greige;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -104,19 +106,32 @@ a {
 }
 .new-plants{
     background-color:$greige;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-    width:50rem;
-    margin:20px 0;
     border-radius: 10px;
+    margin:2rem 1.5rem;
 
+    &__title{
+      font-family:'Playfair Display';
+      font-size:32px;
+      text-align:center;
 
+    }
+
+    &__cards{
+      display:flex;
+      justify-content: space-evenly;
+      flex-wrap:wrap;
+      width:50rem;
+      margin:20px 0;
+    }
     &__card{
         height:12.5rem;
         width:12.5rem;
         border:2px solid black;
         margin:0.625rem;
+    }
+
+    &__image{
+      width:12.5rem;
     }
 }
 
@@ -125,9 +140,13 @@ a {
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
-    margin:1.25rem;
+    margin:2rem 1.5rem;
     border-radius: 10px;
 
+    &__title{
+      font-size:24px;
+      text-align:center;
+    }
 
     &__article{
         width:12.5rem;
